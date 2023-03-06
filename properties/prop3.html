@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property 3</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-map/3.0-rc1/jquery.ui.map.js"></script>
+
+    <!-- JavaScript -->
+    <script src="../script.js"></script>
+    <!-- External Style Sheet -->
+    <link rel="stylesheet" href="../style.css" />
+    <!-- Font Awesome cdn Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <!-- Navigation -->
+        <nav>
+            <div class="logo">
+                <img src="../images/dream-homes-properties-logo.png" alt="Dream Homes Property Logo">
+            </div>
+            <ul class="navbar">
+                <li><a href="../dreamHomes.html">Home</a></li>
+                <li><a href="../dreamHomes.html#fPropBar">Find Properties</a></li>
+                <li><a href="../dreamHomes.html#aboutUsBar">About Us</a></li>
+                <li><a href="../about.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-container-2">
+        <div class="container-2 inforPropCard" data-property-id="prop3">
+            <div class="imageSlider">
+                <div class="container">
+                    <div class="mySlides first">
+                        <div class="numbertext">1 / 8</div>
+                        <img src="../images/5_rooms_flat_1/Exterior.jpeg" style="width: 100%" />
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 8</div>
+                        <img src="../images/5_rooms_flat_1/kitchen.jpeg" style="width: 100%" />
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 8</div>
+                        <img src="../images/5_rooms_flat_1/bedroom.jpeg" style="width: 100%" />
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 8</div>
+                        <img src="../images/5_rooms_flat_1/bedroom2.jpeg" style="width: 100%" />
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 8</div>
+                        <img src="../images/5_rooms_flat_1/bedroom3.jpeg" style="width: 100%" />
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 8</div>
+                        <img src="../images/5_rooms_flat_1/bathroom1.jpeg" style="width: 100%" />
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">7 / 8</div>
+                        <img src="../images/5_rooms_flat_1/bathroom2.jpeg" style="width: 100%" />
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">8 / 8</div>
+                        <img src="../images/5_rooms_flat_1/garden.jpeg" style="width: 100%" />
+                    </div>
+
+                    <button class="prebtn">
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    </button>
+                    <button class="nextbtn">
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                    </button>
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <img class="demo cursor" src="../images/5_rooms_flat_1/Exterior.jpeg" style="width: 100%"
+                                onclick="currentSlide(1)" alt="5 Bedrooms Flat" />
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="../images/5_rooms_flat_1/kitchen.jpeg" style="width: 100%"
+                                onclick="currentSlide(2)" alt="Kitchen" />
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="../images/5_rooms_flat_1/bedroom.jpeg" style="width: 100%"
+                                onclick="currentSlide(3)" alt="Bedroom No 1" />
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="../images/5_rooms_flat_1/bedroom2.jpeg" style="width: 100%"
+                                onclick="currentSlide(4)" alt="Bedroom NO 2" />
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="../images/5_rooms_flat_1/bedroom3.jpeg" style="width: 100%"
+                                onclick="currentSlide(5)" alt="Bedroom NO 3" />
+                        </div>
+
+                        <div class="column">
+                            <img class="demo cursor" src="../images/5_rooms_flat_1/bathroom1.jpeg" style="width: 100%"
+                                onclick="currentSlide(6)" alt="Bathroom No 1" />
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="../images/5_rooms_flat_1/bathroom2.jpeg" style="width: 100%"
+                                onclick="currentSlide(7)" alt="Bathroom No 2" />
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="../images/5_rooms_flat_1/garden.jpeg" style="width: 100%"
+                                onclick="currentSlide(8)" alt="Garden" />
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text">
+                    <p propPageH><b>5 Bedrooms Flat</b></p><br>
+                    <br>
+                    <p>This grand and magnificent flat, boasting regal reception rooms and magnificent
+                        gardens, has 2 spacious master suites and 6 well- proportioned bedrooms, with staff quarters in
+                        the basement. The house has the advantage of a lift and ample off street parking and garaging.
+                        Behind is a substantial, 5 bedroom mews house on Cresswell Place with planning permission to
+                        extend to 3,000 sq ft, leading to close to 13,000 sq ft for the ensemble before any alterations
+                        such as linking both houses....
+
+                    </p>
+                    <br>
+                    <p><b>Price : $ 753100</b></p>
+                    <br>
+                    <p><b>Location : High Road, Ilford, IG1</b></p>
+                    <br>
+                    <p><b>Postal Code : BR5</b> </p>
+                    <br>
+                    <p><b>2022 November 24</b> </p>
+                    <br>
+                    <br>
+                    <div class="fav" id="prop3">
+                        <button class="addFavourites">Add To Favourites</button>
+                        <button class="removeFavourites">Remove From Favourites</button>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="tabs">
+                <ul>
+                    <li><a href="#tab-1">Description</a></li>
+                    <li><a href="#tab-2">Floor Plan</a></li>
+                    <li><a href="#tab-3">Google Map</a></li>
+                </ul>
+                <div id="tab-1">
+
+                    <p> This five bedroom upper maisonette has been refurbished to an excellent standard within this
+                        period terrace building. The property comprises an eat-kitchen, a large double reception room, a
+                        media room/study leading onto a south facing terrace, two large double bedrooms and three
+                        smaller bedrooms all with built in storage, two separate family bathrooms and a separate guest
+                        WC, and utility room.</p>
+                    <br>
+                    <p> Collingham Place is a quiet street that links Collingham Road and Knaresborough Place. It is
+                        ideally placed for both Gloucester Road and Earls Court underground stations (District, Circle,
+                        Piccadilly lines) with an array of shops and restaurants only a short walk away.</p>
+                    <br>
+                    <p>
+                        Godfrey & Barr is a fully independent firm of Residential Estate Agents, based in Hampstead
+                        Garden Suburb and Mill Hill, London. We predominantly cover the residential areas of Hampstead
+                        Garden Suburb, Mill Hill and the periphery areas of Finchley, Hendon, Hampstead, Highgate, St
+                        John's Wood, Golders Green, Arkley and Totteridge.
+
+                    </p>
+                    <br>
+                    <p>
+
+                        Ian Godfrey , Jonathan Barr and Jeremy Fine with our team of experienced negotiators are
+                        established as market leaders in the area. Utilising innovative marketing methods, including our
+                        extensive redesigned web site, desktop publishing and prestigious advertising, we have built an
+                        enviable reputation for personalised and professional service. Since we started trading as
+                        Godfrey & Barr, we have built up an extensive local knowledge. Our experience ensures that we
+                        are well acquainted with all of the properties in our area of activity.
+                    </p>
+                    <br>
+                    <p>
+                        We do not consider our firm to be a run of the mill estate agency, we prefer to be known as
+                        'Property Consultants' as opposed to a typical high street estate agency, as our service is
+                        different. Technically, we are very advanced with unusually for a business such as ours, a full
+                        network of Apple computers, which provide us with fingertip access to extensive databases of
+                        information to assist us in the day to day running of our business. Godfrey and Barr are not
+                        just names above the door, as we are actively involved in all aspects of the transactions that
+                        take place through our firm. It is comforting for many of our clients to know that they are not
+                        dealing with an unknown face or corporation and that we are always available to discuss their
+                        property requirements.
+                    </p>
+                </div>
+                <div id="tab-2">
+                    <img src="../images/5_rooms_flat_1/floorPlan.jpeg" alt="Floor Plan" />
+                </div>
+                <div id="tab-3">
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2480.4041758172!2d0.08013861572091507!3d51.56082371461665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a4290fde8e9d%3A0x2d40455680b3169e!2sHigh%20Rd%2C%20Ilford%20IG1%2C%20UK!5e0!3m2!1sen!2slk!4v1673547277964!5m2!1sen!2slk"
+                        width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </div>
+        </div>
+        <div class="save dropFavourite">
+            <img src="https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678087-heart-1024.png" alt="" />
+            <p>saved properties</p>
+        </div>
+    </div>
+    <!-- Footer  -->
+    <footer>
+        <div class="footer-box">
+            <p>
+                Copyright &copy; 2022 All Rights Reserved <br />
+                <span> designed by Himidiri Himakanika </span>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

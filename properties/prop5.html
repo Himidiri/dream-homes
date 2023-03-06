@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property 5</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-map/3.0-rc1/jquery.ui.map.js"></script>
+
+    <!-- JavaScript -->
+    <script src="../script.js"></script>
+    <!-- External Style Sheet -->
+    <link rel="stylesheet" href="../style.css" />
+    <!-- Font Awesome cdn Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <!-- Navigation -->
+        <nav>
+            <div class="logo">
+                <img src="../images/dream-homes-properties-logo.png" alt="Dream Homes Property Logo">
+            </div>
+            <ul class="navbar">
+                <li><a href="../dreamHomes.html">Home</a></li>
+                <li><a href="../dreamHomes.html#fPropBar">Find Properties</a></li>
+                <li><a href="../dreamHomes.html#aboutUsBar">About Us</a></li>
+                <li><a href="../about.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-container-2">
+        <div class="container-2 inforPropCard" data-property-id="prop5">
+            <div class="imageSlider">
+                <div class="container">
+                    <div class="mySlides first">
+                        <div class="numbertext">1 / 8</div>
+                        <img src="../images/11_bedrooms_flat/11_bedrooms_flat.jpeg" style="width: 100%" />
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 8</div>
+                        <img src="../images/11_bedrooms_flat/livingroom.jpeg" style="width: 100%" />
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 8</div>
+                        <img src="../images/11_bedrooms_flat/kitchen.jpeg" style="width: 100%" />
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 8</div>
+                        <img src="../images/11_bedrooms_flat/studdyArea.jpeg" style="width: 100%" />
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 8</div>
+                        <img src="../images/11_bedrooms_flat/bedroom1.jpeg" style="width: 100%" />
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 8</div>
+                        <img src="../images/11_bedrooms_flat/bedroom2.jpeg" style="width: 100%" />
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">7 / 8</div>
+                        <img src="../images/11_bedrooms_flat/bedroom3.jpeg" style="width: 100%" />
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">8 / 8</div>
+                        <img src="../images/11_bedrooms_flat/bathroom.jpeg" style="width: 100%" />
+                    </div>
+
+                    <button class="prebtn">
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    </button>
+                    <button class="nextbtn">
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                    </button>
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <img class="demo cursor" src="../images/11_bedrooms_flat/11_bedrooms_flat.jpeg"
+                                style="width: 100%" onclick="currentSlide(1)" alt="7 Bedrooms House" />
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="../images/7_bedrooms_house/living_Room.jpeg"
+                                style="width: 100%" onclick="currentSlide(2)" alt="living Room" />
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="../images/7_bedrooms_house/kitchen.jpeg" style="width: 100%"
+                                onclick="currentSlide(3)" alt="Kitchen" />
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="../images/7_bedrooms_house/bedroom1.jpeg" style="width: 100%"
+                                onclick="currentSlide(4)" alt="Bedroom No 1" />
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="../images/7_bedrooms_house/bedroom2.jpeg" style="width: 100%"
+                                onclick="currentSlide(5)" alt="Bedroom No 2" />
+                        </div>
+
+                        <div class="column">
+                            <img class="demo cursor" src="../images/7_bedrooms_house/bathroom1.jpeg" style="width: 100%"
+                                onclick="currentSlide(6)" alt="Bathroom No 1" />
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="../images/7_bedrooms_house/bathroom2.jpeg" style="width: 100%"
+                                onclick="currentSlide(7)" alt="Bathroom No 2" />
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="../images/7_bedrooms_house/garden.jpeg" style="width: 100%"
+                                onclick="currentSlide(8)" alt="Garden" />
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text">
+                    <p propPageH><b>11 Bedrooms Flat</b></p><br>
+                    <br>
+                    <p>An exceptional early Victorian house that boasts the space so many strive to achieve in this
+                        exclusive location. Located on the southern side of this highly regarded residential street, in
+                        the heart of The Boltons Conservation Area. Benefiting from a front and rear garden which
+                        connects to the mews house with off street parking for 5 cars, allowing for fantastic security
+                        and privacy.....
+
+                    </p>
+                    <br>
+                    <p><b>Price : $ 857000</b></p>
+                    <br>
+                    <p><b>Location : Prince Regent Street, Newham, E16</b></p>
+                    <br>
+                    <p><b>Postal Code : E16</b> </p>
+                    <br>
+                    <p><b>2023 January 9</b> </p>
+
+                    <br>
+                    <br>
+                    <div class="fav" id="prop5">
+                        <button class="addFavourites">Add To Favourites</button>
+                        <button class="removeFavourites">Remove From Favourites</button>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="tabs">
+                <ul>
+                    <li><a href="#tab-1">Description</a></li>
+                    <li><a href="#tab-2">Floor Plan</a></li>
+                    <li><a href="#tab-3">Google Map</a></li>
+                </ul>
+                <div id="tab-1">
+
+                    <p>Situated on the fifth floor of this prestigious building, this fantastic lateral apartment is
+                        available for long let. The property has incredible entertaining space, wood floors, media room,
+                        a bright conservatory, and a private balcony off the reception room. The 11 bedrooms have
+                        bountiful wardrobe space, with the principal bedroom offering a large walk-in dressing room. The
+                        building benefits from a 24 hour porter and lift. Wellington Court is located just a short walk
+                        from Knightsbridge underground station, Harrods and the Brompton Road. <br><br>
+
+                        Approximately 326 sq m / 3,512 sq f
+                        <br><br>
+                        We have many self-serve viewing options available to you. These include video walkthroughs, 360
+                        virtual reality viewings and enhanced comprehensive photography.
+                        <br><br>
+                        Within walking distance to the river Thames and is within easy reach of King's Road, Battersea
+                        Park and all the amenities Chelsea has to offer. Close to, the wide-open spaces of Hyde Park,
+                        with the Serpentine for boating in the summer and endless play areas for young children. Ideally
+                        situated within easy reach of the shops, bars and restaurants of Knightsbridge and The Kings
+                        Road. The pedestrianized area of South Kensington and up Exhibition Road will provide an
+                        excellent location for café life. Both the V&A and the Science Museum are in this area along
+                        with Imperial College and the Royal College of Music. Visit the Albert Hall for a variety of
+                        musical tastes. Sloane Square underground (District and Circle line) Knightsbridge underground
+                        station (Piccadilly line) and South Kensington (Piccadilly, District and Circle lines) are
+                        within close walking distance. The Cromwell Road running West from here leads onto the M4 and M5
+                        motorways. A selection of fantastic restaurants can be found in this area, including Zuma on
+                        Raphael Street, The Capital on Basil Street and Nozomi on Beachamp Place. Good local schools
+                        include Garden House, More House School, Sussex House School and The Knightsbridge School
+                    </p>
+                    <br>
+                    <p>
+
+                        Ian Godfrey , Jonathan Barr and Jeremy Fine with our team of experienced negotiators are
+                        established as market leaders in the area. Utilising innovative marketing methods, including our
+                        extensive redesigned web site, desktop publishing and prestigious advertising, we have built an
+                        enviable reputation for personalised and professional service. Since we started trading as
+                        Godfrey & Barr, we have built up an extensive local knowledge. Our experience ensures that we
+                        are well acquainted with all of the properties in our area of activity.
+                    </p>
+
+                </div>
+                <div id="tab-2">
+                    <img src="../images/7_bedrooms_house/floorplan.png" alt="Floor Plan" />
+                </div>
+                <div id="tab-3">
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.7484559942395!2d0.02991471571953021!3d51.51783071776161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a7d903b0c0e7%3A0x814d3f9634b0a948!2sPrince%20Regent%20Ln%2C%20London%2C%20UK!5e0!3m2!1sen!2slk!4v1673550207064!5m2!1sen!2slk"
+                        width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </div>
+        </div>
+        <div class="save dropFavourite">
+            <img src="https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678087-heart-1024.png" alt="" />
+            <p>saved properties</p>
+        </div>
+    </div>
+    <!-- Footer  -->
+    <footer>
+        <div class="footer-box">
+            <p>
+                Copyright &copy; 2022 All Rights Reserved <br />
+                <span> designed by Himidiri Himakanika </span>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

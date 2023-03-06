@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property 1</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-map/3.0-rc1/jquery.ui.map.js"></script>
+
+    <!-- JavaScript -->
+    <script src="../script.js"></script>
+    <!-- External Style Sheet -->
+    <link rel="stylesheet" href="../style.css" />
+    <!-- Font Awesome cdn Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <!-- Navigation -->
+        <nav>
+            <div class="logo">
+                <img src="../images/dream-homes-properties-logo.png" alt="Dream Homes Property Logo">
+            </div>
+            <ul class="navbar">
+                <li><a href="../dreamHomes.html">Home</a></li>
+                <li><a href="../dreamHomes.html#fPropBar">Find Properties</a></li>
+                <li><a href="../dreamHomes.html#aboutUsBar">About Us</a></li>
+                <li><a href="../about.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-container-2">
+        <div class="container-2 inforPropCard" data-property-id="prop1">
+            <div class="imageSlider">
+                <div class="container">
+                    <div class="mySlides first">
+                        <div class="numbertext">1 / 8</div>
+                        <img src="../images/3_rooms_House_1/3BR_House.jpeg" style="width: 100%" />
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 8</div>
+                        <img src="../images/3_rooms_House_1/livingRoom.jpeg" style="width: 100%" />
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 8</div>
+                        <img src="../images/3_rooms_House_1/kitchen.jpeg" style="width: 100%" />
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 8</div>
+                        <img src="../images/3_rooms_House_1/bedroom1.jpeg" style="width: 100%" />
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 8</div>
+                        <img src="../images/3_rooms_House_1/bedroom2.jpeg" style="width: 100%" />
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 8</div>
+                        <img src="../images/3_rooms_House_1/bedroom3.jpeg" style="width: 100%" />
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">7 / 8</div>
+                        <img src="../images/3_rooms_House_1/washroom.jpeg" style="width: 100%" />
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">8 / 8</div>
+                        <img src="../images/3_rooms_House_1/garden.jpeg" style="width: 100%" />
+                    </div>
+
+                    <button class="prebtn">
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    </button>
+                    <button class="nextbtn">
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                    </button>
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <img class="demo cursor" src="../images/3_rooms_House_1/3BR_House.jpeg" style="width: 100%"
+                                onclick="currentSlide(1)" alt="3 Bedrooms House" />
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="../images/3_rooms_House_1/livingRoom.jpeg" style="width: 100%"
+                                onclick="currentSlide(2)" alt="Living Room" />
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="../images/3_rooms_House_1/kitchen.jpeg" style="width: 100%"
+                                onclick="currentSlide(3)" alt="Kitchen" />
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="../images/3_rooms_House_1/bedroom1.jpeg" style="width: 100%"
+                                onclick="currentSlide(4)" alt="Bedroom NO 1" />
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="../images/3_rooms_House_1/bedroom2.jpeg" style="width: 100%"
+                                onclick="currentSlide(5)" alt="Bedroom NO 2" />
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="../images/3_rooms_House_1/bedroom3.jpeg" style="width: 100%"
+                                onclick="currentSlide(6)" alt="Bedroom NO 3" />
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="../images/3_rooms_House_1/washroom.jpeg" style="width: 100%"
+                                onclick="currentSlide(7)" alt="Washroom" />
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="../images/3_rooms_House_1/garden.jpeg" style="width: 100%"
+                                onclick="currentSlide(8)" alt="Garden" />
+                        </div>
+                    </div>
+
+                </div>
+                <!-- --------------------------------------------->
+                <div class="text">
+                    <p propPageH><b>3 Bedrooms House</b></p><br>
+                    <br>
+                    <p>Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts
+                        Wood station with fast trains to London and within easy walking distance of local shops,
+                        schools,
+                        bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x
+                        10'1
+                        kitchen/breakfast room and conservatory. The property also benefits from having a utility room
+                        and
+                        cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC.
+                        Additional features include double glazing, gas central heating and a well presented interior
+                    </p>
+
+                    <br>
+                    <p><b>Price : $ 750000</b></p>
+                    <br>
+                    <p><b>Location : Petts Wood Road, Petts Wood, Orpington</b></p>
+                    <br>
+                    <p><b>Postal Code : BR5</b> </p>
+                    <br>
+                    <p><b>2022 October 12</b> </p>
+                    <br>
+                    <br>
+                    <div class="fav" id="prop1">
+                        <button class="addFavourites">Add To Favourites</button>
+                        <button class="removeFavourites">Remove From Favourites</button>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="tabs">
+                <ul>
+                    <li><a href="#tab-1">Description</a></li>
+                    <li><a href="#tab-2">Floor Plan</a></li>
+                    <li><a href="#tab-3">Google Map</a></li>
+                </ul>
+                <div id="tab-1">
+
+                    <p> A recently built 2/3 bedroom house featuring a south facing terrace and garden overlooking
+                        Northway Gardens park and open space. This unique home is arranged over 3 floors with a double
+                        height atrium, open plan kitchen/diner with integrated appliances, utility room, parking, access
+                        to a charming communal garden with seating area for residents
+
+                    </p>
+                    <br>
+                    <p>
+                        Bute Mews is conveniently located off Northway, within moments of the shopping & transport
+                        amenities of The Market Place and approximately 0.9 miles to East Finchley underground station
+                        (Northern line)</p>
+                    <br>
+                    <p>
+                        Godfrey & Barr is a fully independent firm of Residential Estate Agents, based in Hampstead
+                        Garden Suburb and Mill Hill, London. We predominantly cover the residential areas of Hampstead
+                        Garden Suburb, Mill Hill and the periphery areas of Finchley, Hendon, Hampstead, Highgate, St
+                        John's Wood, Golders Green, Arkley and Totteridge.
+
+                        We have been specialising in prestigious properties in this area since our inception in 1991.
+                        The Partnership handles residential sales, lettings, property management, new homes, land and
+                        investments.
+
+                        Ian Godfrey , Jonathan Barr and Jeremy Fine with our team of experienced negotiators are
+                        established as market leaders in the area. Utilising innovative marketing methods, including our
+                        extensive redesigned web site, desktop publishing and prestigious advertising, we have built an
+                        enviable reputation for personalised and professional service. Since we started trading as
+                        Godfrey & Barr, we have built up an extensive local knowledge. Our experience ensures that we
+                        are well acquainted with all of the properties in our area of activity.
+
+                        We do not consider our firm to be a run of the mill estate agency, we prefer to be known as
+                        'Property Consultants' as opposed to a typical high street estate agency, as our service is
+                        different. Technically, we are very advanced with unusually for a business such as ours, a full
+                        network of Apple computers, which provide us with fingertip access to extensive databases of
+                        information to assist us in the day to day running of our business. Godfrey and Barr are not
+                        just names above the door, as we are actively involved in all aspects of the transactions that
+                        take place through our firm. It is comforting for many of our clients to know that they are not
+                        dealing with an unknown face or corporation and that we are always available to discuss their
+                        property requirements.
+                    </p>
+                </div>
+                <div id="tab-2">
+                    <img src="../images/3_rooms_House_1/3BedRoomFLP.jpeg" alt="Floor Plan" />
+                </div>
+                <div id="tab-3">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2489.674969821763!2d0.07961071571543459!3d51.39065152705359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8ab82cc8f3cb1%3A0xc746da03b0c6c716!2sPetts%20Wood%20Rd%2C%20Petts%20Wood%2C%20Orpington%2C%20UK!5e0!3m2!1sen!2slk!4v1673545679114!5m2!1sen!2slk"
+                        width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="save dropFavourite">
+            <img src="https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678087-heart-1024.png" alt="" />
+            <p>saved properties</p>
+            <!-- <div class="favourite-properties"></div> -->
+        </div>
+    </div>
+    <!-- Footer  -->
+    <footer>
+        <div class="footer-box">
+            <p>
+                Copyright &copy; 2022 All Rights Reserved <br />
+                <span> designed by Himidiri Himakanika </span>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

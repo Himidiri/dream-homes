@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property 2</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-map/3.0-rc1/jquery.ui.map.js"></script>
+
+    <!-- JavaScript -->
+    <script src="../script.js"></script>
+    <!-- External Style Sheet -->
+    <link rel="stylesheet" href="../style.css" />
+    <!-- Font Awesome cdn Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <!-- Navigation -->
+        <nav>
+            <div class="logo">
+                <img src="../images/dream-homes-properties-logo.png" alt="Dream Homes Property Logo">
+            </div>
+            <ul class="navbar">
+                <li><a href="../dreamHomes.html">Home</a></li>
+                <li><a href="../dreamHomes.html#fPropBar">Find Properties</a></li>
+                <li><a href="../dreamHomes.html#aboutUsBar">About Us</a></li>
+                <li><a href="../about.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-container-2">
+        <div class="container-2 inforPropCard" data-property-id="prop2">
+            <div class="imageSlider">
+                <div class="container">
+                    <div class="mySlides first">
+                        <div class="numbertext">1 / 7</div>
+                        <img src="../images/2_rooms_Flat_1/2_rooms_flat.jpeg" style="width: 100%" />
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 7</div>
+                        <img src="../images/2_rooms_Flat_1/living_room.jpeg" style="width: 100%" />
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 7</div>
+                        <img src="../images/2_rooms_Flat_1/kitchen.jpeg" style="width: 100%" />
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 7</div>
+                        <img src="../images/2_rooms_Flat_1/bedroom_1.jpeg" style="width: 100%" />
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 7</div>
+                        <img src="../images/2_rooms_Flat_1/bedroom_2.jpeg" style="width: 100%" />
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 7</div>
+                        <img src="../images/2_rooms_Flat_1/washroom.jpeg" style="width: 100%" />
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">7 / 7</div>
+                        <img src="../images/2_rooms_Flat_1/garden.jpeg" style="width: 100%" />
+                    </div>
+
+                    <button class="prebtn">
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    </button>
+                    <button class="nextbtn">
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                    </button>
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <img class="demo cursor" src="../images/2_rooms_Flat_1/2_rooms_flat.jpeg"
+                                style="width: 100%" onclick="currentSlide(1)" alt="2 Bedrooms Flat" />
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="../images/2_rooms_Flat_1/living_room.jpeg" style="width: 100%"
+                                onclick="currentSlide(2)" alt="Living Room" />
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="../images/2_rooms_Flat_1/kitchen.jpeg" style="width: 100%"
+                                onclick="currentSlide(3)" alt="Kitchen" />
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="../images/2_rooms_Flat_1/bedroom_1.jpeg" style="width: 100%"
+                                onclick="currentSlide(4)" alt="Bedroom NO 1" />
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="../images/2_rooms_Flat_1/bedroom_2.jpeg" style="width: 100%"
+                                onclick="currentSlide(5)" alt="Bedroom NO 2" />
+                        </div>
+
+                        <div class="column">
+                            <img class="demo cursor" src="../images/2_rooms_Flat_1/washroom.jpeg" style="width: 100%"
+                                onclick="currentSlide(6)" alt="Washroom" />
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="../images/2_rooms_Flat_1/garden.jpeg" style="width: 100%"
+                                onclick="currentSlide(7)" alt="Garden" />
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text">
+                    <p propPageH><b>2 Bedrooms Flat</b></p><br>
+                    <br>
+                    <p>Presented in excellent decorative order throughout is this two double bedroom, two bathroom,
+                        garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid
+                        wooden floors and includes integrated appliances including a dishwasher & a washing machine.
+                        This large open plan benefits from bi folding doors onto a secluded private courtyard garden.
+                        Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a
+                        shower attachment over the bath. There is also a separate wet room. There are walnut doors
+                        throughout and wiring for Sky TV/aerial points in the living room/kitchen and both
+                        bedrooms.<br>This apartment being only five years old, is still under a 10 year building
+                        guarantee...
+                    </p>
+                    <br>
+                    <p><b>Price : $ 399995</b></p>
+                    <br>
+                    <p><b>Location : Crofton Road Orpington BR6</b></p>
+                    <br>
+                    <p><b>Postal Code : BR6</b> </p>
+                    <br>
+                    <p><b>2022 September 14</b> </p>
+                    <br>
+                    <br>
+                    <div class="fav" id="prop2">
+                        <button class="addFavourites">Add To Favourites</button>
+                        <button class="removeFavourites">Remove From Favourites</button>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="tabs">
+                <ul>
+                    <li><a href="#tab-1">Description</a></li>
+                    <li><a href="#tab-2">Floor Plan</a></li>
+                    <li><a href="#tab-3">Google Map</a></li>
+                </ul>
+                <div id="tab-1">
+
+                    <p> We are proud to offer this delightful 2 bedroom, 1 bathroom flat in a great location. </p>
+                    <br>
+                    <p> Available to move in from 11 February 2023, this property benefits from available parking, and
+                        garden access. Property is offered furnished.</p>
+                    <br>
+                    <p> Viewing highly recommended. Contact OpenRent today for more details or to arrange a viewing!
+                    </p>
+
+                    <br>
+                    <p>
+                        Bute Mews is conveniently located off Northway, within moments of the shopping & transport
+                        amenities of The Market Place and approximately 0.9 miles to East Finchley underground station
+                        (Northern line)</p>
+                    <br>
+                    <p>
+                        Godfrey & Barr is a fully independent firm of Residential Estate Agents, based in Hampstead
+                        Garden Suburb and Mill Hill, London. We predominantly cover the residential areas of Hampstead
+                        Garden Suburb, Mill Hill and the periphery areas of Finchley, Hendon, Hampstead, Highgate, St
+                        John's Wood, Golders Green, Arkley and Totteridge.
+
+
+
+                        Ian Godfrey , Jonathan Barr and Jeremy Fine with our team of experienced negotiators are
+                        established as market leaders in the area. Utilising innovative marketing methods, including our
+                        extensive redesigned web site, desktop publishing and prestigious advertising, we have built an
+                        enviable reputation for personalised and professional service. Since we started trading as
+                        Godfrey & Barr, we have built up an extensive local knowledge. Our experience ensures that we
+                        are well acquainted with all of the properties in our area of activity.
+
+                        We do not consider our firm to be a run of the mill estate agency, we prefer to be known as
+                        'Property Consultants' as opposed to a typical high street estate agency, as our service is
+                        different. Technically, we are very advanced with unusually for a business such as ours, a full
+                        network of Apple computers, which provide us with fingertip access to extensive databases of
+                        information to assist us in the day to day running of our business. Godfrey and Barr are not
+                        just names above the door, as we are actively involved in all aspects of the transactions that
+                        take place through our firm. It is comforting for many of our clients to know that they are not
+                        dealing with an unknown face or corporation and that we are always available to discuss their
+                        property requirements.
+                    </p>
+                </div>
+                <div id="tab-2">
+                    <img src="../images/2_rooms_Flat_1/floorPlan.jpeg" alt="Floor Plan" />
+                </div>
+                <div id="tab-3">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2490.613576945437!2d0.06977811571491141!3d51.37340022831291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8ab6ac2bdc8d1%3A0xb0dde3c09939f924!2sCrofton%20Rd%2C%20Orpington%2C%20UK!5e0!3m2!1sen!2slk!4v1673545817972!5m2!1sen!2slk"
+                        width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </div>
+        </div>
+        <div class="save dropFavourite">
+            <img src="https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678087-heart-1024.png" alt="" />
+            <p>saved properties</p>
+        </div>
+    </div>
+    <!-- Footer  -->
+    <footer>
+        <div class="footer-box">
+            <p>
+                Copyright &copy; 2022 All Rights Reserved <br />
+                <span> designed by Himidiri Himakanika </span>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

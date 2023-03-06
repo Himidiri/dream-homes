@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dream Homes Properties</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- JavaScript -->
+  <script src="./script.js"></script>
+
+  <!-- External Style Sheet -->
+  <link rel="stylesheet" href="./style.css" />
+  <!-- Content Security Policy (CSP) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src *;">
+  <!-- Font Awesome cdn Link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body id="body">
+  <header>
+    <!-- Navigation -->
+    <nav>
+      <div class="mobilenavtools" id="mobilenavtools">
+        <i class="fa-solid fa-bars" id="open"></i>
+        <i class="fa-light fa-xmark" id="close"></i>
+      </div>
+      <div class="logo" id="logo">
+        <img src="./Images/dream-homes-properties-logo.png" alt="Dream Homes Property Logo" />
+      </div>
+      <ul class="navbar">
+        <li><a href="./dreamHomes.html">Home</a></li>
+        <li><a href="./dreamHomes.html#fPropBar">Find Properties</a></li>
+        <li><a href="./dreamHomes.html#aboutUsBar">About Us</a></li>
+        <li><a href="./about.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="header-image">
+    <img src="./Images/background-img.jpg" alt="header image" />
+  </div>
+  <h2 id="fPropBar" class="find">Find Your Dream Home</h2>
+  <div class="search-area">
+    <form>
+      <div class="form-group">
+        <input type="text" placeholder="Enter Postal Code..." id="postal-code" name="postal-code" />
+      </div>
+      <div class="drop-down">
+        <div class="form-group">
+          <select id="property-type" name="property-type">
+            <option value="" disabled selected>Property Type</option>
+            <option value="House">House</option>
+            <option value="Flat">Flat</option>
+            <option value="Any">Any</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <select id="date-added" name="date-added">
+            <option value="" disabled selected>Date Added</option>
+            <option value="January">Last 7 days</option>
+            <option value="December">Last 30 days</option>
+            <option value="September,October,November">
+              September - November (2022)
+            </option>
+            <option value="Anytime">Anytime</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="spinner1">Min Bedrooms :</label>
+        <input id="spinner1" value="1" />
+      </div>
+      <div class="form-group">
+        <label for="spinner2">Max Bedrooms :</label>
+        <input id="spinner2" value="1" />
+      </div>
+
+      <div class="form-group range">
+        <label for="amount">Price range :</label>
+        <input type="text" id="amount" readonly />
+      </div>
+
+      <div class="form-group">
+        <div id="slider-range"></div>
+      </div>
+
+      <div class="buttons">
+        <div class="form-group">
+          <button id="search-property">
+            <i class="fa fa-search"></i> Search Property
+          </button>
+        </div>
+        <div class="form-group">
+          <button class="viewFavourites">View Favourites</button>
+        </div>
+        <div class="form-group">
+          <button class="clearFavourites">Clear All</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div id="Placeholder"></div>
+  <div id="Placeholder2"></div>
+
+  <hr />
+  <section id="aboutUsBar" class="about">
+    <h2>About Dream Homes Property</h2>
+    <div class="aboutP">
+      <br />
+      <p>
+        We are a leading real estate agency, offering a wide range of
+        high-quality properties for sale and rent.
+      </p>
+      <p>
+        Our team of experienced professionals is dedicated to helping you find
+        the perfect home or investment opportunity.
+      </p>
+    </div>
+  </section>
+  <hr />
+
+  <!-- Footer  -->
+  <footer>
+    <div class="footer-box">
+      <p>
+        Copyright &copy; 2022 All Rights Reserved <br />
+        <span> designed by Himidiri Himakanika </span>
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>
